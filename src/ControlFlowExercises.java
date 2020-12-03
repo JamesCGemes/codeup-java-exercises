@@ -10,7 +10,7 @@ public class ControlFlowExercises {
 
 
 //      1.b will count by 2's up to 100.
-//        int a = 2;
+//        int a = 0;
 //        do {
 //            System.out.println(a);
 //            a = a + 2;
@@ -45,7 +45,7 @@ public class ControlFlowExercises {
 //            System.out.printf("%d ",i);
 //        }
 
-//        for(int a = 2; a <= 100;){
+//        for(int a = 0; a <= 100;){
 //            System.out.println(a);
 //            a += 2;
 //        }
@@ -58,6 +58,21 @@ public class ControlFlowExercises {
 //            num *= num;
 //
 //        }
+
+// 3. FizzBuzz
+        for(int i = 1; i <= 100 ; i++){
+            if(((i % 3) == 0) && ((i % 5) == 0)){
+                System.out.println("Fizz");
+            }else if(i % 3 == 0){
+                System.out.println("Buzz");
+            }else if(i % 5 == 0){
+                System.out.println("FizzBuzz");
+            }else{
+                System.out.println(i);
+            }
+
+        }
+
 
 
 
