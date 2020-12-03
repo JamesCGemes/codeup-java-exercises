@@ -24,6 +24,13 @@ public class ControlFlowExercises {
 //            num = num - 5;
 //        }while (num >= -10);
 
+//        will output 2 squared up to 1,000,000.
+            int toBeSquared = 2;
+            do{
+
+            }while(toBeSquared<= 1000000);
+
+
 
 
 //        Using for loop to refactor 1.a and 1.b
