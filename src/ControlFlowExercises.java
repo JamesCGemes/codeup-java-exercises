@@ -45,10 +45,20 @@ public class ControlFlowExercises {
 //            System.out.printf("%d ",i);
 //        }
 
-        for(int a = 2; a <= 100;){
-            System.out.println(a);
-            a += 2;
-        }
+//        for(int a = 2; a <= 100;){
+//            System.out.println(a);
+//            a += 2;
+//        }
+//        for(int num = 100; num >= -10;){
+//            System.out.println(num);
+//            num -= 5;
+//        }
+//        for(long num = 2L; num <= 1000000;){
+//            System.out.println(num);
+//            num *= num;
+//
+//        }
+
 
 
     }
