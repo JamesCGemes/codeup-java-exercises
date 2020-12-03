@@ -25,10 +25,11 @@ public class ControlFlowExercises {
 //        }while (num >= -10);
 
 //        will output 2 squared up to 1,000,000.
-            int toBeSquared = 2;
+            long toBeSquared = 2L;
             do{
-
-            }while(toBeSquared<= 1000000);
+                System.out.println(toBeSquared);
+                toBeSquared *= toBeSquared;
+            }while(toBeSquared <= 1000000);
 
 
 
