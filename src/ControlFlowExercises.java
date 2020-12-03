@@ -41,8 +41,13 @@ public class ControlFlowExercises {
 //        Using for loop to refactor 1.a and 1.b
 
 
-        for(int i = 5; i <=15; i++){
-            System.out.printf("%d ",i);
+//        for(int i = 5; i <=15; i++){
+//            System.out.printf("%d ",i);
+//        }
+
+        for(int a = 2; a <= 100;){
+            System.out.println(a);
+            a += 2;
         }
 
 
