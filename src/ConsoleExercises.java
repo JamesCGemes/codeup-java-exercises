@@ -5,7 +5,7 @@ public class ConsoleExercises {
 
 //        double pi = 3.14159;
 //
-//        System.out.printf("The value of pi is approximately %f.%n", pi);
+//        System.out.printf("The value of pi is approximately %.2f.%n", pi);
 //
         Scanner userInput = new Scanner(System.in);
 //
