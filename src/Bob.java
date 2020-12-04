@@ -20,23 +20,23 @@ public class Bob {
                     System.out.printf("%s%n", sure);
                 } else if (statement.endsWith("!")) {
                     System.out.printf("%s%n", whoa);
-                } else if (statement.endsWith(" ")) {
+                } else if (statement.isEmpty()) {
                     System.out.printf("%s%n", fine);
                 } else {
                     System.out.printf("%s%n", whatever);
                 }
                 sc.nextLine();
-                System.out.println("would you like to say something else to Bob? Enter 1 =y 0 = n");
+                System.out.println("would you like to say something else to Bob? Enter 1 =yes 0 = no");
                 continueRunning = sc.nextInt();
 
             }
             System.exit(0);
-
-
-
-
-
-
-
     }
 }
+
+
+
+
+
+
+
