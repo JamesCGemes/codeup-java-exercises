@@ -13,6 +13,8 @@ public class Bob {
             String whoa = "Whoa, chill out";
             String fine = "Fine. Be that way";
             String whatever = "Whatever";
+            String askAgain = "y";
+            String stopAsking = "n";
 
             System.out.println("Say something to Bob!");
             String statement = sc.next();
@@ -26,6 +28,8 @@ public class Bob {
             }else{
                 System.out.printf("%s",whatever);
             }
+
+            System.out.println("would you like to say something else to Bob? Enter y/n");
 
 
 

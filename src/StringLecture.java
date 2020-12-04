@@ -73,8 +73,8 @@ public class StringLecture {
 
 // ------ .substring(int beginIndex[, int endIndex])
 
-//        String name = "Justin Bob Reich";
-//        String firstName = name.substring(0, name.indexOf(" "));
+        String name = "Justin Bob Reich";
+        String firstName = name.substring(0, name.indexOf(" "));
 //
 //        String lastName = name.substring(name.lastIndexOf(" ") + 1);
 //        System.out.println(firstName);
