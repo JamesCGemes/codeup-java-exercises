@@ -15,6 +15,18 @@ public class Bob {
             String whatever = "Whatever";
 
             System.out.println("Say something to Bob!");
+            String statement = sc.next();
+
+            if(statement.endsWith("?")){
+                System.out.printf("%s",sure);
+            }else if(statement.endsWith("!")){
+            System.out.printf("%s", whoa);
+            }else if(statement.endsWith(" ")){
+                System.out.printf("%s",fine);
+            }else{
+                System.out.printf("%s",whatever);
+            }
+
 
 
 
