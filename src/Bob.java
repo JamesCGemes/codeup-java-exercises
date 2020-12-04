@@ -13,23 +13,31 @@ public class Bob {
             String whoa = "Whoa, chill out";
             String fine = "Fine. Be that way";
             String whatever = "Whatever";
-            String askAgain = "y";
-            String stopAsking = "n";
+            int continueRunning = 1;
+//            String askAgain = "y";
+//            String stopAsking = "n";
 
+            while(continueRunning != 0) {
             System.out.println("Say something to Bob!");
             String statement = sc.next();
 
-            if(statement.endsWith("?")){
-                System.out.printf("%s",sure);
-            }else if(statement.endsWith("!")){
-            System.out.printf("%s", whoa);
-            }else if(statement.endsWith(" ")){
-                System.out.printf("%s",fine);
-            }else{
-                System.out.printf("%s",whatever);
-            }
+                if (statement.endsWith("?")) {
+                    System.out.printf("%s%n", sure);
+                } else if (statement.endsWith("!")) {
+                    System.out.printf("%s%n", whoa);
+                } else if (statement.endsWith(" ")) {
+                    System.out.printf("%s%n", fine);
+                } else {
+                    System.out.printf("%s%n", whatever);
+                }
+                sc.nextLine();
+                System.out.println("would you like to say something else to Bob? Enter 1 =y 0 = n");
+                continueRunning = sc.nextInt();
 
-            System.out.println("would you like to say something else to Bob? Enter y/n");
+            }
+            System.exit(0);
+//            if answer  is y then
+
 
 
 
