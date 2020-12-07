@@ -1,4 +1,6 @@
+import java.util.Random;
 import java.util.Scanner;
+
 
 public class MethodsExercises {
 
@@ -37,16 +39,21 @@ public class MethodsExercises {
         return userNum;
     }
 //Method for displaying factorial based on user input.
-    public static int getFactorial(int pickedNum){
-//        make counter = to 1
-        long factorialNum;
-//        increment the counter by 1 while<= pickedNumber
-//        multiply the pickedNum by the counter number
-//        Display "%d! = %d x",pickedNum, counter
-        int counter = 1;
-        if(counter <= pickedNum, counter + 1 ){
+    public static void getFactorial(int pickedNum){
+        int userNum = getInteger(1,10);
+        long factorialNum = 1;
+            for (int counter = 1; counter <= userNum; counter++) {
+                factorialNum *= counter;
+            }
+        System.out.printf("The factorial of %d! = %d ",userNum,factorialNum);
 
-        }
+    }
+
+    public static void diceGame(int inputOne,int inputTwo){
+        Random rand = new Random();
+        int totalNumOfSides = inputOne + inputTwo;
+        int diceRollNum = rand.nextInt(totalNumOfSides);
+        System.out.printf("You rolled a %d%n",diceRollNum);
     }
 
 
@@ -63,9 +70,30 @@ public class MethodsExercises {
 //        getInteger(1,10);
 
 //
-        System.out.println("Please pick a number between 1 and 10");
-        int userNum = sc.nextInt();
-        getFactorial(userNum);
+//         3. get number and show factorial
+//        System.out.println("Please pick a number between 1 and 10");
+//        int userNum = sc.nextInt();
+//        getFactorial(userNum);
+
+
+//**************************************************//
+//    prompt user for number of sides per die.
+//    capture the two inputs and store in variables
+        System.out.println("Please enter the number of sides for first die");
+        int sidesOne = sc.nextInt();
+        System.out.println("Please enter the number of sides for second die");
+        int sidesTwo = sc.nextInt();
+//    prompt user to roll dice.
+        System.out.println("would you like to roll the dice? yes or no.");
+        do{
+            diceGame(sidesOne,sidesTwo);
+        }while(sc.next().equals("yes"));
+
+
+
+
+
+
 
 
 
