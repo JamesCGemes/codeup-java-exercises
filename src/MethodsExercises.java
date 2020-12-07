@@ -71,9 +71,9 @@ public class MethodsExercises {
 
 //
 //         3. get number and show factorial
-//        System.out.println("Please pick a number between 1 and 10");
-//        int userNum = sc.nextInt();
-//        getFactorial(userNum);
+        System.out.println("Please pick a number between 1 and 10");
+        int userNum = sc.nextInt();
+        getFactorial(userNum);
 
 
 //**************************************************//
