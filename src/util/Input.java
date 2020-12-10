@@ -13,7 +13,7 @@ public class Input {
     }
 //************************************
     public String getString(){
-        System.out.println("Type somthing");
+        System.out.println("Type something");
         return this.scanner.nextLine();
     }
 
@@ -23,14 +23,24 @@ public class Input {
             return true;
         } else return false;
     }
-////************************************
-//    public int getInt(int min, int max){
-//
-//    }
-//
-//    public int getInt(){
-//
-//    }
+//************************************
+
+public int getInt(int min, int max){
+    int userNum = getInt();
+    if(userNum < min || userNum > max){
+        System.out.println("try again");
+        getInt();
+    }else if(userNum > min || userNum < max){
+        System.out.println("Good guess");
+    }
+        return
+}
+
+
+    public int getInt(){
+        System.out.println("Pick a number");
+        return this.scanner.nextInt();
+    }
 ////************************************
 //    public double getDouble(double min, double max){
 //
