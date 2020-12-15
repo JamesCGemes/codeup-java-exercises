@@ -4,6 +4,18 @@ public class ShapesTest {
 
     public static void main(String[] args){
 
+
+        Measurable myShape = new Rectangle(8,10);
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
+
+         myShape = new Square(9);
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
+
+
+
+
 //        Rectangle box1 = new Rectangle(4,5);
 //
 //
