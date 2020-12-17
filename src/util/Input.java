@@ -18,12 +18,12 @@ public class Input {
         return getString();
     }
 
-    public boolean yesNo(){
-        return yesNo("Please enter yes or no.");
-//        String input = this.sc.next();
-//        return (input.trim().toLowerCase().equals("y") ||
-//                input.trim().toLowerCase().equals("yes"));
-    }
+//    public boolean yesNo(){
+//        return yesNo("Please enter yes or no.");
+////        String input = this.sc.next();
+////        return (input.trim().toLowerCase().equals("y") ||
+////                input.trim().toLowerCase().equals("yes"));
+//    }
 
     public boolean yesNo(String prompt){
         System.out.println(prompt);
