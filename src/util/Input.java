@@ -18,12 +18,12 @@ public class Input {
         return getString();
     }
 
-//    public boolean yesNo(){
-//        return yesNo("Please enter yes or no.");
+    public boolean yesNo(){
+        return yesNo("Please enter yes or no.");
 ////        String input = this.sc.next();
 ////        return (input.trim().toLowerCase().equals("y") ||
 ////                input.trim().toLowerCase().equals("yes"));
-//    }
+    }
 
     public boolean yesNo(String prompt){
         System.out.println(prompt);
@@ -34,8 +34,12 @@ public class Input {
 
 
     public int getInt(){
-        System.out.println("Please enter an int.");
-        return this.sc.nextInt();
+        try{
+            return Integer.valueOf(getString());
+        } catch (NumberFormatException e){
+            System.out.println("Please enter and integer");
+            return getInt();
+        }
     }
 
     public int getInt(int min, int max){
@@ -61,7 +65,12 @@ public class Input {
 
     public double getDouble(){
         System.out.println("Please enter a double.");
-        return this.sc.nextDouble();
+        try {
+            return Double.valueOf(getString());
+        }catch (NumberFormatException e){
+            System.out.println("Input needs be a number");
+            return getDouble();
+        }
     }
 
     public double getDouble(double min, double max){
@@ -79,7 +88,12 @@ public class Input {
         double input;
         do{
             System.out.println(prompt);
-            input = this.sc.nextDouble();
+            try{
+                input = Double.valueOf(getString());
+            } catch (Exception e){
+                System.out.println("Must be a double");
+                return getDouble();
+            }
         }while(input < min || input > max);
 
         return input;
