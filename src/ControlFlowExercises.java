@@ -80,27 +80,56 @@ public class ControlFlowExercises {
         Scanner sc = new Scanner(System.in);
         boolean keepGoing = true;
 
-        do {
-            System.out.print("What number would you like to go up to? ");
-            int userNum = sc.nextInt();
-            System.out.println();
-            System.out.println("Here is your table");
-            System.out.println();
-            System.out.println("Number | Squared | Cubed");
-            System.out.println("------ | ------- | -----");
-            for (int i = 1; i <= userNum; i += 1){
-                System.out.format("%-7d", i);
-                System.out.print("|");
-                System.out.format(" %d-8", i * i);
-                System.out.print("|");
-                System.out.format(" %d-9", i * i * i);
-                System.out.println();
+//        do {
+//            System.out.print("What number would you like to go up to? ");
+//            int userNum = sc.nextInt();
+//            System.out.println();
+//            System.out.println("Here is your table");
+//            System.out.println();
+//            System.out.println("Number | Squared | Cubed");
+//            System.out.println("------ | ------- | -----");
+//            for (int i = 1; i <= userNum; i += 1){
+//                System.out.format("%-7d", i);
+//                System.out.print("|");
+//                System.out.format(" %d-8", i * i);
+//                System.out.print("|");
+//                System.out.format(" %d-9", i * i * i);
+//                System.out.println();
+//            }
+//            System.out.print("Would you like to pick another number? y/n");
+//            String userResponse = sc.next();
+//                if (!userResponse.equals("y")){
+//                    keepGoing = false;
+//                }
+//        }while (keepGoing);
+
+
+
+        do{
+            System.out.println("Please enter a numerical grade between 0 and 100");
+            int userGrade = sc.nextInt();
+
+            if(userGrade <= 59){
+                System.out.println("You got an F");
             }
-            System.out.print("Would you like to pick another number? y/n");
+            if(userGrade <= 66 && userGrade >= 60){
+                System.out.println("You got a D");
+            }
+            if(userGrade <= 79 && userGrade >= 67){
+                System.out.println("You got a  C");
+            }
+            if(userGrade <= 87 && userGrade >= 80){
+                System.out.println("You got a B");
+            }
+            if (userGrade >= 88){
+                System.out.println("You got an A");
+            }
+            System.out.println("Would you like to enter another grade? y/n");
             String userResponse = sc.next();
-                if (!userResponse.equals("y")){
-                    keepGoing = false;
-                }
+            if (!userResponse.equals("y")){
+                keepGoing = false;
+            }
+
         }while (keepGoing);
 
 
