@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 //     1.a Outputs 5-15 using a while loop
@@ -73,6 +75,33 @@ public class ControlFlowExercises {
 //        }
 
 //        3.Display table of powers
+
+
+        Scanner sc = new Scanner(System.in);
+        boolean keepGoing = true;
+
+        do {
+            System.out.print("What number would you like to go up to? ");
+            int userNum = sc.nextInt();
+            System.out.println();
+            System.out.println("Here is your table");
+            System.out.println();
+            System.out.println("Number | Squared | Cubed");
+            System.out.println("------ | ------- | -----");
+            for (int i = 1; i <= userNum; i += 1){
+                System.out.format("%-7d", i);
+                System.out.print("|");
+                System.out.format(" %d-8", i * i);
+                System.out.print("|");
+                System.out.format(" %d-9", i * i * i);
+                System.out.println();
+            }
+            System.out.print("Would you like to pick another number? y/n");
+            String userResponse = sc.next();
+                if (!userResponse.equals("y")){
+                    keepGoing = false;
+                }
+        }while (keepGoing);
 
 
 
